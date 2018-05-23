@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   padding: 0;
@@ -12,9 +10,18 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
-  background-image: url("../img/bg.jpg");
+  background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+.inner-page {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
 }
 
 a {
@@ -23,6 +30,7 @@ a {
 
 .button {
   font: inherit;
+
   text-align: center;
   color: #ffffff;
   vertical-align: middle;
@@ -33,60 +41,72 @@ a {
 }
 
 .button:hover,
-.button:active,
-.button:focus {
+.button:focus,
+.button:active {
   background-color: #663d15;
 }
 
 .main-navigation {
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff
+  color: #ffffff;
+
   background-color: #000000;
 }
+
 .site-navigation,
-.user-navigation{
+.user-navigation {
   list-style: none;
 }
+
 .site-navigation a,
-.user-navigation a{
-  color: #ffffff
+.user-navigation a {
+  color: #ffffff;
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-navigation a:hover;
-.user-navigation a:focus{
+.user-navigation a:hover,
+.user-navigation a:focus {
   background-color: #242424;
 }
-.features-list{
+
+.features-list {
   list-style: none;
 }
-.features-item{
+
+.feature-item {
   text-align: center;
 }
-.features-item h3{
+
+.feature-item h3 {
   font-size: 30px;
   line-height: 42px;
 }
-.index-columns{
+
+.index-columns {
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: url(/img/pattern-light.jpg);
+  background-image: url("img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
+
 .index-columns h2 {
   font-size: 30px;
   line-height: 42px;
 }
-.news-list{
+
+.news-list {
   list-style: none;
 }
-.news-item time{
+
+.news-item time {
   text-transform: none;
 }
-.gallery-content{
+
+.gallery-content {
   background-color: #cccccc;
   border: 7px solid #ffffff;
 }
@@ -94,23 +114,140 @@ a {
 .appointment-item input {
   font: inherit;
 
-  background-color: transporent;
+  background-color: transparent;
   border: 2px solid #000000;
 }
 
-.appointment-item input:focus{
+.appointment-item input:focus {
   border-color: #663d15;
 }
 
-.main-footer{
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.catalog-item-price b {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.catalog-item-price .button {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+  background-color: #663d15;
+}
+
+.pagination-item-current a {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.main-footer {
   color: #ffffff;
 
   background-color: #212121;
-  background-image: url(/img/pattern-dark.jpg);
+  background-image: url("img/pattern-dark.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
-.footer-contact {
+
+.footer-contacts a {
   color: #ffffff;
   text-decoration: underline;
 }
