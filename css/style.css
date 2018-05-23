@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
 
 body {
   margin: 0;
@@ -17,8 +17,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.main-header{
-  height: 72px;
-  width: 100%;
-  border-color: #000;
+a {
+  text-decoration: none;
+}
+.main-navigation{
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff
 }
