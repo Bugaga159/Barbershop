@@ -15,6 +15,16 @@ body {
   background-repeat: no-repeat;
 }
 
+body.item {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
 .inner-page {
   color: #000000;
 
@@ -28,6 +38,9 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  display: none;
+}
 .button {
   font: inherit;
 
@@ -238,6 +251,30 @@ a {
   background-color: #ffffff;
 }
 
+
+
+/*---------         ITEM          -----------*/
+.product h1 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.product-list {
+  list-style: none;
+}
+
+.product-list a {
+  color: #000000;
+  text-decoration: none;
+}
+.product-item-end {
+  color: #aba9a7;
+}
+
+.product-list a:hover,
+.product-list a:focus {
+  background-color: #663d15
+}
 
 
 
