@@ -262,6 +262,17 @@ a {
 
 
 /*---------         ITEM          -----------*/
+/* .item-content{
+  display: block;
+}
+.product-img{
+  float: left;
+  width: 50%;
+}
+.description{
+  float: right;
+    width: 50%;
+} */
 .product h1 {
   font-size: 30px;
   line-height: 42px;
