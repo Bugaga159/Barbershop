@@ -2,28 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>«БОРОДИНСКИЙ»</title>
-  <link rel="stylesheet" href="css/reset.css">
+  <title>Барбершоп «БОРОДИНСКИЙ»</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="others-lists">
   <header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
-				<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершоп
+				<img src="img/logo-small.png" width="111" height="24" alt="Логотип барбершоп
 				 Бородинский">
 			</a>
 			<ul class="site-navigation">
 				<li><a href="info.html">Информация</a></li>
 				<li><a href="news.html">Новости</a></li>
 				<li><a href="price.html">Прайс-лист</a></li>
-				<li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 			<ul class="user-navigation">
-				<li><a class="login-link" href=""></a>Вход</li>
+				<li><a class="login-link" href=""><img src="img/login.png" alt="Вход">Вход</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -33,28 +31,32 @@
       <ul class="shop-nav-list">
         <li class="shop-nav-item"><a href="index.html">ГЛАВНАЯ</a></li>
         <li class="shop-nav-item"><a href="catalog.html">Магазин</a></li>
-        <li class="shop-nav-item">Средство для ухода</li>
+        <li class="shop-nav-item-end">Средство для ухода</li>
       </ul>
     </section>
     <section class="manufacturers">
 
       <form class="manufacturers-form" action="" method="post">
-        <fieldset>
+        <fieldset class="filters">
           <legend><h2>производители</h2></legend>
-          <p><input type="checkbox" name="option1" value="a1">Baxter of California</p>
-          <p><input type="checkbox" name="option2" value="a2">Mr Natty</p>
-          <p><input type="checkbox" name="option3" value="a3">Suavecito</p>
-          <p><input type="checkbox" name="option4" value="a4">Malin+Goetz</p>
-          <p><input type="checkbox" name="option5" value="a5">Murray’s</p>
-          <p><input type="checkbox" name="option6" value="a6">American Crew</p>
+          <ul>
+            <li><input class="filter-input" type="checkbox" name="option1" value="a1" id="a1"><label for="a1">Baxter of California</label></li>
+            <li><input class="filter-input" type="checkbox" name="option2" value="a2" id="a2"><label for="a2">Mr Natty</label></li>
+            <li><input class="filter-input" type="checkbox" name="option3" value="a3" id="a3"><label for="a3">Suavecito</label></li>
+            <li><input class="filter-input" type="checkbox" name="option4" value="a4" id="a4"><label for="a4">Malin+Goetz</label></li>
+            <li><input class="filter-input" type="checkbox" name="option5" value="a5" id="a5"><label for="a5">Murray’s</label></li>
+            <li><input class="filter-input" type="checkbox" name="option6" value="a6" id="a6" disabled><label for="a6">American Crew</label></li>
+          </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="filters">
           <legend><h2>группы товаров</h2></legend>
-          <p><input type="radio" name="group" value="b1">Бритвенные  принадлежности</p>
-          <p><input type="radio" name="group" value="b2">Средства для ухода</p>
-          <p><input type="radio" name="group" value="b3">Аксессуары</p>
-        </fieldset>  
-        <button type="submit" name="button">показать</button>
+          <ul>
+            <li><input class="filter-input" type="radio" name="group" value="b1" id="b1"><label for="b1">Бритвенные  принадлежности</label></li>
+            <li><input class="filter-input" type="radio" name="group" value="b2" id="b2"><label for="b2">Средства для ухода</label></li>
+            <li><input class="filter-input" type="radio" name="group" value="b3" id="b3"><label for="b3">Аксессуары</label></li>
+          </ul>
+        </fieldset>
+        <button  class="button" type="submit" name="button">показать</button>
       </form>
     </section>
     <section class="product-catalog">
@@ -154,15 +156,15 @@
 		<p>
 			Барбершоп «БОРОДИНСКИЙ»<br>
 			Адрес: г. Санк-Петербург, Б. Конюшенная, д. 19/8<br/>
-			<a href="map.html">Как нас найти?</a><br>
+			<a class="footer-contact" href="map.html">Как нас найти?</a><br>
 			Телефон: +7 (812) 666-02-66
 		</p>
 		<div class="footer-social">
 			<b>Давайте дружить!</b>
 			<ul>
-				<li><a class="social-button" href="#">Вконтакте</a></li>
-				<li><a class="social-button" href="#">Фейсбук</a></li>
-				<li><a class="social-button" href="#">Интаграм</a></li>
+				<li><a class="social-button" href="#"><img src="img/vk.png" alt="Вконтакте"></a></li>
+				<li><a class="social-button" href="#"><img src="img/facebook.png" alt="Фейсбук"></a></li>
+				<li><a class="social-button" href="#"><img src="img/instagram.png" alt="Интаграм"></a></li>
 			</ul>
 		</div>
 		<p class="footer-copyright">

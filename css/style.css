@@ -15,7 +15,8 @@ body {
   background-repeat: no-repeat;
 }
 
-body.others-lists {
+.others-lists {
+  /* font: inherit; */
   color: #000000;
 
   background-color: #f9f6f3;
@@ -23,7 +24,6 @@ body.others-lists {
   background-position: top center;
   background-repeat: no-repeat;
 }
-
 
 .inner-page {
   color: #000000;
@@ -261,7 +261,7 @@ a {
 
 
 
-/*---------         ITEM and PRICE         -----------*/
+/*----------------------         ITEM and PRICE         ---------------------------------------*/
  /* .item-content{
   display: block;
 }
@@ -274,19 +274,22 @@ a {
     width: 50%;
 } */
 .product h1,
-.price-nav h1 {
+.price-nav h1,
+.shop-nav h1 {
   font-size: 30px;
   line-height: 42px;
 }
 
 .product-list li,
-.price-nav-list li{
+.price-nav-list li,
+.shop-nav-list li{
   margin-left: 20px;
   display: inline;
 }
 
 .product ul,
-.price-nav ul {
+.price-nav ul,
+..shop-nav ul {
   list-style-image: url(../img/square-black.png);
 }
 
@@ -296,12 +299,14 @@ a {
 }
 
 .product-list a,
- .price-nav-list a {
+ .price-nav-list a,
+ .shop-nav-list a {
   color: #000000;
   text-decoration: none;
 }
 .product-item-end,
-.price-nav-item-end {
+.price-nav-item-end,
+.shop-nav-item-end {
   color: #aba9a7;
 }
 
@@ -312,7 +317,9 @@ a {
 .product-list a:hover,
 .product-list a:focus,
 .price-nav-list a:hover,
-.price-nav-list a:focus {
+.price-nav-list a:focus,
+.shop-nav-list a:focus,
+.shop-nav-list a:hover {
   background-color: #663d15
 }
 
@@ -320,7 +327,8 @@ a {
   color: #aba9a7;
 }
 
-.description h2 {
+.description h2
+legend h2 {
   font-size: 24px;
   line-height: 30px;
 }
@@ -350,7 +358,9 @@ a {
   line-height: 30px;
 }
 .price-service table {
+    font: inherit;
     border-collapse: collapse;
+    color: #000000;
 }
 
 .price-service table, th, td {
@@ -361,7 +371,31 @@ a {
   padding: 0 10px 15px 10px;
 }
 
-/*--------           FOOTER              --------------*/
+
+/*------------------           CATALOG                    ---------------------------*/
+
+.manufacturers-form fieldset {
+  border: none;
+}
+.filters ul {
+  list-style: none;
+  line-height: 18px;
+}
+.filter-input:hover + label,
+.filter-input:focus +label {
+  color: #663d15;
+}
+.filter-input:disabled + label{
+  color: #000000;
+
+  opacity: 0.5;
+}
+input[type="checkbox"]:enabled + label{
+  color: #000000;
+}
+
+
+/*---------------------------           FOOTER              -------------------------------------*/
 
 
 .main-footer {
@@ -381,7 +415,7 @@ a {
 .main-footer .footer-contact:hover,
 .main-footer .footer-contact:focus {
   text-decoration: none;
-  background-color: #663d15
+  background-color: #663d15;
 }
 .footer-social {
   text-align: center;
