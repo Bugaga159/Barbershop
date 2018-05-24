@@ -320,7 +320,7 @@ a {
 .price-nav-list a:focus,
 .shop-nav-list a:focus,
 .shop-nav-list a:hover {
-  background-color: #663d15
+  text-decoration: underline;
 }
 
 .vendor-code {
@@ -393,7 +393,33 @@ legend h2 {
 input[type="checkbox"]:enabled + label{
   color: #000000;
 }
+.product-catalog-item {
+  background-color: #ffffff;
+}
+.product-catalog-item a {
+  color: #ffffff;
+}
 
+.product-catalog-item a:focus,
+.product-catalog-item a:hover{
+  color: #663d15;
+}
+.product-catalog ul{
+  list-style: none;
+}
+.product-catalog-page a{
+  color: #ffffff;
+  background-color: #000000;
+}
+.product-catalog-page a:hover,
+.product-catalog-page a:focus{
+  background-color: #663d15;
+  color: #ffffff;
+}
+a.page-activ{
+  color: #000000;
+  background-color: #ffffff;
+}
 
 /*---------------------------           FOOTER              -------------------------------------*/
 
