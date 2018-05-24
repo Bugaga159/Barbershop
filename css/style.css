@@ -69,7 +69,14 @@ a {
 
 .site-navigation,
 .user-navigation {
+  display: inline-block;
+}
+
+.site-navigation li,
+.user-navigation li {
   list-style: none;
+  display: inline-block;
+
 }
 
 .site-navigation a,
@@ -83,6 +90,7 @@ a {
 .user-navigation a:focus {
   background-color: #242424;
 }
+
 
 .features-list {
   list-style: none;
@@ -259,7 +267,17 @@ a {
   line-height: 42px;
 }
 
-.product-list {
+.product-list li{
+  margin-left: 20px;
+  display: inline;
+}
+
+.product ul{
+  list-style-image: url(../img/square-black.png);
+}
+
+
+.product-img-list {
   list-style: none;
 }
 
@@ -271,12 +289,35 @@ a {
   color: #aba9a7;
 }
 
+.product-img-item{
+  display: inline;
+}
+
 .product-list a:hover,
 .product-list a:focus {
   background-color: #663d15
 }
 
+.vendor-code {
+  color: #aba9a7;
+}
 
+.description h2 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.description-price {
+  background-color: #e5e5e5;
+}
+
+.description a[class="button"] {
+  color: #ffffff;
+  text-decoration: none;
+}
+.description-set-list {
+  list-style-image: url(../img/square-black.png);
+}
 
 /*--------           FOOTER              --------------*/
 
@@ -290,14 +331,15 @@ a {
   background-repeat: repeat;
 }
 
-.footer-contacts a {
+.main-footer .footer-contact {
   color: #ffffff;
   text-decoration: underline;
 }
 
-.footer-contact:hover,
-.footer-contact:focus {
+.main-footer .footer-contact:hover,
+.main-footer .footer-contact:focus {
   text-decoration: none;
+  background-color: #663d15
 }
 .footer-social {
   text-align: center;
@@ -306,10 +348,6 @@ a {
 .footer-social ul{
   list-style: none;
 }
-
-/* .social-button {
-  display: none;
-} */
 
 .social-button:hover,
 .social-button:focus{
