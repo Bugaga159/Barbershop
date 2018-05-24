@@ -15,7 +15,7 @@ body {
   background-repeat: no-repeat;
 }
 
-body.item {
+body.others-lists {
   color: #000000;
 
   background-color: #f9f6f3;
@@ -261,8 +261,8 @@ a {
 
 
 
-/*---------         ITEM          -----------*/
-/* .item-content{
+/*---------         ITEM and PRICE         -----------*/
+ /* .item-content{
   display: block;
 }
 .product-img{
@@ -273,17 +273,20 @@ a {
   float: right;
     width: 50%;
 } */
-.product h1 {
+.product h1,
+.price-nav h1 {
   font-size: 30px;
   line-height: 42px;
 }
 
-.product-list li{
+.product-list li,
+.price-nav-list li{
   margin-left: 20px;
   display: inline;
 }
 
-.product ul{
+.product ul,
+.price-nav ul {
   list-style-image: url(../img/square-black.png);
 }
 
@@ -292,11 +295,13 @@ a {
   list-style: none;
 }
 
-.product-list a {
+.product-list a,
+ .price-nav-list a {
   color: #000000;
   text-decoration: none;
 }
-.product-item-end {
+.product-item-end,
+.price-nav-item-end {
   color: #aba9a7;
 }
 
@@ -305,7 +310,9 @@ a {
 }
 
 .product-list a:hover,
-.product-list a:focus {
+.product-list a:focus,
+.price-nav-list a:hover,
+.price-nav-list a:focus {
   background-color: #663d15
 }
 
@@ -326,8 +333,32 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
-.description-set-list {
+.description-set-list,
+.tools-list {
   list-style-image: url(../img/square-black.png);
+}
+/*------------------price basic settings---------------*/
+.description-list-price {
+  color: #000000;
+  font-size: 48px;
+  line-height: 48px;
+}
+.tools h3,
+.about-us h3,
+.price-service h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.price-service table {
+    border-collapse: collapse;
+}
+
+.price-service table, th, td {
+    border: 2px solid #000000;
+}
+.line-price {
+  margin: 0;
+  padding: 0 10px 15px 10px;
 }
 
 /*--------           FOOTER              --------------*/
