@@ -132,7 +132,7 @@ img{
 
   width: 16px;
   height: 18px;
-  background-image: url(../img/login.png);
+  background-image: url("../img/login.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 
@@ -173,7 +173,7 @@ img{
   margin: 0;
   padding: 0;
   list-style: none;
-  min-height: 170px;
+
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -183,24 +183,45 @@ img{
 .features-item {
   width: 300px;
   text-align: center;
-  min-height: 170px;
+
 }
 
 .features-item h3 {
+  position: relative;
   margin: 0;
   margin-bottom: 60px;
 
   font-size: 30px;
   line-height: 42px;
 }
+.features-item h3::after{
+  content: "";
+
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #ffffff;
+
+  transform: rotate(45deg);
+}
+.features-item p{
+  margin: 0 10px;
+}
 
 .index-columns {
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image:
+    url("../img/line-w.png"),
+    url("../img/pattern-light.jpg");
+  background-position: center, 0 0;
+  background-repeat:no-repeat, repeat;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -210,6 +231,9 @@ img{
 }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 30px;
   line-height: 42px;
 }
@@ -219,7 +243,17 @@ width: 380px;
 }
 
 .news-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
   list-style: none;
+}
+.news-item{
+  margin-bottom: 25px;
+}
+.news-item p{
+  margin: 0;
 }
 
 .news-item time {
@@ -403,7 +437,7 @@ min-height: 340px;
 .product ul,
 .price-nav ul,
 .shop-nav ul {
-  list-style-image: url(../img/square-black.png);
+  list-style-image: url("../img/square-black.png");
 }
 
 
@@ -456,7 +490,7 @@ legend h2 {
 }
 .description-set-list,
 .tools-list {
-  list-style-image: url(../img/square-black.png);
+  list-style-image: url("../img/square-black.png");
 }
 /*------------------price basic settings---------------*/
 .description-list-price {
@@ -614,7 +648,7 @@ a.page-activ{
   color: #000;
 
   background-color: #f8f3f0;
-  background-image: url(../img/pattern-light.jpg);
+  background-image: url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
