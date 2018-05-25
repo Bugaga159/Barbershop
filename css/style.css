@@ -37,7 +37,10 @@ body {
 a {
   text-decoration: none;
 }
-
+img{
+  max-width: 100% ;
+  height: auto;
+}
 .visually-hidden {
   display: none;
 }
@@ -190,6 +193,8 @@ width: 300px;
 .gallery-content {
   background-color: #cccccc;
   border: 7px solid #ffffff;
+  max-width: 300px;
+  margin: 0;
 }
 .contents {
   width: 380px;
@@ -357,7 +362,7 @@ min-height: 340px;
 
 .product ul,
 .price-nav ul,
-..shop-nav ul {
+.shop-nav ul {
   list-style-image: url(../img/square-black.png);
 }
 
@@ -500,7 +505,7 @@ a.page-activ{
   background-position: 0 0;
   background-repeat: repeat;
   margin-top: 65px;
-  min-height: 180px;
+  /* min-height: 180px; */
   padding: 60px 0;
 }
 .footer-contact{
@@ -517,38 +522,42 @@ a.page-activ{
   display: -ms-flex;
   display: flex;
 }
-
-/* .main-footer .footer-contact {
+.footer-contact-map{
   color: #ffffff;
-  /* text-decoration: underline; */
-  margin: 0;
-} */
+  text-decoration: underline;
+}
 
 
-.main-footer .footer-contact:hover,
-.main-footer .footer-contact:focus {
+
+.main-footer .footer-contact-map:hover,
+.main-footer .footer-contact-map:focus {
   text-decoration: none;
   background-color: #663d15;
 }
 .footer-social {
   /* text-align: center; */
   width: 145px;
-  margin: 0;
+  /* margin: 0 auto; */
 
 }
 
 .footer-social ul{
   list-style: none;
+  display: inline-flex;
+
 }
+
 
 .social-button:hover,
 .social-button:focus{
   background-color: #663d15;
+
 }
 .footer-copyright{
   /* text-align: center; */
-  margin: 0;
   width: 150px;
+  margin: 0;
+
   margin-left: auto;
 }
 .footer-copyright button:hover,
