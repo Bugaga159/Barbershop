@@ -84,20 +84,25 @@ img{
 }
 
 .site-navigation {
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+
   width: 620px;
   margin: 0;
   padding: 0;
-
-  list-style: none;
-  min-height: 70px;
 }
 
 .user-navigation {
-  width: 140px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  max-width: 140px;
   margin: 0;
   padding: 0;
   list-style: none;
-  min-height: 70px;
 }
 .main-navigation-wrapper {
   width: 100%;
@@ -105,6 +110,41 @@ img{
   min-height: 70px;
   background-color: #000000;
 }
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 25px 20px;
+
+  color: #ffffff;
+}
+
+.user-navigation .login-link{
+  position: relative;
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: "";
+
+  position: absolute;
+  top: 28px;
+  left: 24px;
+
+  width: 16px;
+  height: 18px;
+  background-image: url(../img/login.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.login-link:focus::before,
+.login-link:hover::before,
+.login-link:active::before{
+  opacity: 1;
+}
+
 .container{
   width: 940px;
   margin: 0 auto;
@@ -117,10 +157,7 @@ img{
   justify-content: space-between;
 }
 
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
-}
+
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -150,6 +187,9 @@ img{
 }
 
 .features-item h3 {
+  margin: 0;
+  margin-bottom: 60px;
+
   font-size: 30px;
   line-height: 42px;
 }
@@ -541,9 +581,13 @@ a.page-activ{
 
 }
 
-.footer-social ul{
+.footer-social-list{
   list-style: none;
-  display: inline-flex;
+  display: flex;
+  width: 145px;
+
+  margin: 0;
+  padding: 0;
 
 }
 
