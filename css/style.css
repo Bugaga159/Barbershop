@@ -686,43 +686,76 @@ a.page-activ{
   text-decoration: underline;
 }
 
+.footer-social {
+  width: 145px;
+  text-align: center;
+}
 
+.footer-social b{
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-social ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 141px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-button {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+
+  background-color: #000;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #fff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: #000000;
+}
 
 .main-footer .footer-contact-map:hover,
 .main-footer .footer-contact-map:focus {
   text-decoration: none;
   background-color: #663d15;
 }
-.footer-social {
-  /* text-align: center; */
-  width: 145px;
-  /* margin: 0 auto; */
-
-}
-
-.footer-social-list{
-  list-style: none;
-  display: flex;
-  width: 145px;
-
-  margin: 0;
-  padding: 0;
-
-}
 
 
-.social-button:hover,
-.social-button:focus{
-  background-color: #663d15;
-
-}
 .footer-copyright{
-  /* text-align: center; */
   width: 150px;
   margin: 0;
 
   margin-left: auto;
+  text-align: center;
 }
+
+.footer-copyright b {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer-copyright .button {
+  display: block;
+  margin-right: 0;
+}
+
 .footer-copyright button:hover,
 .footer-copyright button:focus {
   color: #000000;
