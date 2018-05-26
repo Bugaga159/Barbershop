@@ -45,6 +45,10 @@ img{
   display: none;
 }
 .button {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px  30px;
+
   font: inherit;
 
   text-align: center;
@@ -55,6 +59,14 @@ img{
   background-color: #000000;
   border: none;
 }
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000;
+}
+
 .main-header{
   margin-bottom: 75px;
   min-height: 285px;
