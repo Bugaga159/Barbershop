@@ -277,21 +277,94 @@ width: 300px;
 }
 
 .gallery-content {
+  height: 164px;
+
+  margin: 0;
+
   background-color: #cccccc;
   border: 7px solid #ffffff;
-  max-width: 300px;
+
+}
+.gallery-content img{
+  width: 286px;
+  height: 164px;
+}
+
+.galary-container{
+  position: relative;
+
+  height: 260px;
+}
+
+.gallery-button{
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+
+  width: 140px;
   margin: 0;
 }
+.gallery-button-back {
+  left: 0;
+}
+.gallery-button-next {
+  right: 0;
+}
+
 .contents {
   width: 380px;
   min-height: 295px;
 }
+.contents p{
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .appointment {
 width: 300px;
 min-height: 340px;
 }
 
+.appointment-info {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.appointment-form {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment-item {
+width: 140px;
+margin: 0;
+margin-bottom: 10px;
+}
+
+.appointment-item label {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+.appointment .button {
+  display: block;
+  width: 100%;
+  margin-right: 0;
+  margin-top: 10px;
+
+}
+
 .appointment-item input {
+  box-sizing: border-box;
+  width: 140px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+
   font: inherit;
 
   background-color: transparent;
