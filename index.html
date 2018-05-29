@@ -195,27 +195,31 @@
 	</footer>
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль.</p>
+		<p class="modal-description">ВВедите пожалуйста свой логин и пароль</p>
 		<form class="login-form" action="login.html" method="post">
-			<p><label for="login"></label>
+			<p><label class="visually-hidden" for="login">login</label>
 				<input id="login" class="login-icon-user" type="text" name="login" placeholder="Логин">
 			</p>
-			<p><label for="password"></label>
-				<input id="password" class="login-icon-password" type="password" name="password" placeholder="пароль">
+			<p><label class="visually-hidden" for="password">password</label>
+				<input id="password" class="login-icon-password" type="password" name="password" placeholder="Пароль">
 			</p>
-			<p class="login-password-info">
-				<input class="visually-hidden" type="checkbox" name="remember" >
-				Запомнить меня
+			<p class="login-info">
+				<label  class="login-checkbox">
+					<input class="visually-hidden" type="checkbox" name="remember" >
+					<span class="checkbox-indicator"></span>
+					Запомнить меня
+				</label>
 				<a class="restore" href="#">Я забыл пароль!</a>
 			</p>
 			<button class="button" type="submit">Войти</button>
 		</form>
 		<button class=" button modal-close"></button>
 	</section>
-	<!-- <section class="modal modal-map">
+	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
 		<p><img src="img/map.jpg" alt="г. Санк-Петербург, Б. Конюшенная, д. 19/8" height="562px" width="768px"></p>
-		<button class="button modal-close">Закрыть</button>
-	</section> -->
+		<button class="modal-close" type="button">Закрыть</button>
+	</section>
+
 </body>
 </html>
