@@ -16,16 +16,6 @@ body {
 }
 
 .others-lists {
-  /* font: inherit; */
-  color: #000000;
-
-  background-color: #f9f6f3;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.inner-page {
   color: #000000;
 
   background-color: #f9f6f3;
@@ -66,22 +56,37 @@ img{
   opacity: 0.5;
   background-color: #000;
 }
+.others-lists .main-header {
+  margin-bottom: 70px;
+  background-color: #000000;
+}
 
 .main-header{
   margin-bottom: 75px;
-  min-height: 285px;
+  
 }
-.main-header-logo{
+
+ .main-header-logo{
   order: 2;
   width: 368px;
   height: 153px;
   /* display: block; */
+}
+.others-lists .main-header-logo{
+order: 0;
+width: 111px;
+height: 24px;
+padding: 23px 20px;
 }
 
 .button:hover,
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+.others-lists .main-navigation {
+align-items: flex-start;
+flex-direction: row;
 }
 
 .main-navigation {
@@ -122,6 +127,10 @@ img{
   min-height: 70px;
   background-color: #000000;
 }
+.others-lists .user-navigation{
+  margin-left: auto;
+}
+
 .site-navigation a,
 .user-navigation a {
   display: block;
