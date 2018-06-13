@@ -63,7 +63,7 @@ img{
 
 .main-header{
   margin-bottom: 75px;
-  
+
 }
 
  .main-header-logo{
@@ -503,17 +503,34 @@ margin-bottom: 10px;
 
 
 /*----------------------         ITEM and PRICE         ---------------------------------------*/
- /* .item-content{
-  display: block;
+.description-wrapper {
+  margin-bottom: 50px;
 }
-.product-img{
-  float: left;
+
+.wrapper-service {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-content: space-between;
+
+  margin: 0;
+  padding: 0;
+}
+.tools,
+.price-service {
+  display: block;
+
+  width: 460px;
+}
+
+.price-service-table {
+  /* display: block; */
+  width: 100%;
+}
+.price-service-table td {
   width: 50%;
 }
-.description{
-  float: right;
-    width: 50%;
-} */
+
 .product h1,
 .price-nav h1,
 .shop-nav h1 {
@@ -561,7 +578,8 @@ margin-bottom: 10px;
 .price-nav-list a:focus,
 .shop-nav-list a:focus,
 .shop-nav-list a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #663d15;
 }
 
 .vendor-code {
@@ -569,7 +587,7 @@ margin-bottom: 10px;
 }
 
 .description h2
-legend h2 {
+.legend h2 {
   font-size: 24px;
   line-height: 30px;
 }
@@ -743,7 +761,7 @@ a.page-activ{
 .main-footer .footer-contact-map:hover,
 .main-footer .footer-contact-map:focus {
   text-decoration: none;
-  background-color: #663d15;
+  color: #663d15;
 }
 
 
