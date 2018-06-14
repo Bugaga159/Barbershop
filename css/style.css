@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -13,6 +14,7 @@ body {
   background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
 }
 
 .others-lists {
@@ -504,16 +506,31 @@ margin-bottom: 10px;
 
 /*----------------------         ITEM and PRICE         ---------------------------------------*/
 .description-wrapper {
+  margin-top: 35px;
   margin-bottom: 50px;
 }
+.price-nav-item a::after{
+  margin-top: 8px;
+  content: "";
 
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+  margin-left: 8px;
+
+
+  background-color: #000;
+
+  transform: rotate(45deg);
+}
 .wrapper-service {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   align-content: space-between;
 
-  margin: 0;
+  margin: 0 10px;
   padding: 0;
 }
 .tools,
@@ -523,14 +540,30 @@ margin-bottom: 10px;
   width: 460px;
 }
 
+.tools-item {
+  padding-bottom: 10px;
+}
+
 .price-service-table {
   /* display: block; */
   width: 100%;
 }
 .price-service-table td {
   width: 50%;
-}
+  padding-top: 8px;
+  padding-bottom: 8px;
 
+}
+.price-service-table-left {
+  padding-left: 6px;
+}
+.price-service-table-right {
+  text-align: center;
+}
+.price-nav-list{
+  margin: 0;
+  padding: 0;
+}
 .product h1,
 .price-nav h1,
 .shop-nav h1 {
@@ -541,21 +574,20 @@ margin-bottom: 10px;
 .product-list li,
 .price-nav-list li,
 .shop-nav-list li{
-  margin-left: 20px;
+  margin-right: 20px;
   display: inline;
 }
 
-.product ul,
+/* .product ul,
 .price-nav ul,
 .shop-nav ul {
   list-style-image: url("../img/square-black.png");
-}
+} */
 
 
 .product-img-list {
   list-style: none;
 }
-
 .product-list a,
  .price-nav-list a,
  .shop-nav-list a {
@@ -610,6 +642,12 @@ margin-bottom: 10px;
   font-size: 48px;
   line-height: 48px;
 }
+.about-us {
+  margin: 0 10px;
+}
+.tools-list {
+    padding-left: 20px;
+}
 .tools h3,
 .about-us h3,
 .price-service h3 {
@@ -629,7 +667,17 @@ margin-bottom: 10px;
   margin: 0;
   padding: 0 10px 15px 10px;
 }
-
+.wrapper-about-us{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-content: space-between;
+}
+.wrapper-about-us p {
+  width: 460px;
+  text-align: left;
+  padding-right: 80px;
+}
 
 /*------------------           CATALOG                    ---------------------------*/
 
